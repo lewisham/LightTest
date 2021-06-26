@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: mat_0_fish_100000007
+  m_Shader: {fileID: 4800000, guid: c44b49eca5cf99848b815e0884857e4c, type: 3}
+  m_ShaderKeywords: _FLOWMAP_OFF _NORMALMAP _TRANSNO_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 2800000, guid: dd62037e6219d5043983d2497a92a9f1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: e3272d5ed07c7df4f9a39227bcbdabee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 8900000, guid: 25c772f2700f39d48b4d55a4bcc93585, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FlowMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FlowMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: e3272d5ed07c7df4f9a39227bcbdabee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normals:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecCube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Albedo: 0.506
+    - _Alpha: 1
+    - _AlphaA_Strength: 1
+    - _AlphaB_Strength: 1.1
+    - _BaseInt: 1
+    - _BumpScale: 1
+    - _CubeMap: 1
+    - _Cutoff: 0.5
+    - _DarkInt: 0.48
+    - _DarkSide: 0.91
+    - _DetailNormalMapScale: 1
+    - _DirectLightInt: 1
+    - _DstBlend: 0
+    - _EdgeAlpha: 0
+    - _EffectShinness: 0.5
+    - _Emission: 0
+    - _EmissionStrength: 0
+    - _FlowIn: 0
+    - _FlowInt: 1
+    - _FlowLe: 0
+    - _FlowLerp: 0.5
+    - _FlowMap: 0
+    - _FlowMask: 1
+    - _FlowSpeed: 0.1
+    - _FlowStrenth: 1
+    - _FlowTime: 0
+    - _FrezFalloff: 9.45
+    - _FrezPow: 0.123
+    - _FrozenColorValue: 0
+    - _FrozenSaturation: -1.4
+    - _Gloss: 0.33
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GrayValue: 0
+    - _HitAniValue: 0
+    - _HitColorInt: 1
+    - _HitColorShow: 0
+    - _HitColorValue: 0
+    - _HitColorWeight: 0.145
+    - _HitColor_Add: 5
+    - _HitColor_Rate: 0
+    - _HitSaturation: 0.2
+    - _LightInt: 1
+    - _Metalics: 0.471
+    - _Metallic: 0
+    - _Mode: 0
+    - _NormalMap: 1
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Reflection: 0.503
+    - _Scale: 1
+    - _ShadowScale: 1
+    - _ShadowTransparency: 0.35
+    - _Shininess: 0.33
+    - _Smoothness: 0.045
+    - _SmoothnessTextureChannel: 0
+    - _SpecCubeInt: 0
+    - _SpecInt: 0.592
+    - _Specular: 2.11
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _TestGrayFlag: 0
+    - _TransNo: 0
+    - _Transparency: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    - _test: 0
+    - _test_float: 0.406
+    m_Colors:
+    - _Color: {r: 0.90588236, g: 0.7921569, b: 0.77254903, a: 1}
+    - _DarkColor: {r: 1, g: 0.1745283, b: 0.1745283, a: 0.5}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FlowColor: {r: 0.8679245, g: 0.6407905, b: 0.6100035, a: 0.4039216}
+    - _FrozenColor: {r: 0.564, g: 1, b: 1, a: 1}
+    - _HitColor: {r: 0.5294118, g: 0.007843138, b: 0.007843138, a: 1}
+    - _LightVec: {r: 0, g: 1.5, b: 0, a: 0}
+    - _PreHitColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ShadowVector: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecColor: {r: 0.9254902, g: 0.6745098, b: 0.56078434, a: 1}
+    - _TestGrayColor: {r: 0.2588235, g: 0.254902, b: 0.2470588, a: 0.1}

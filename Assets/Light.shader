@@ -128,10 +128,10 @@
 
 				float3 iblDiffuseResult = iblDiffuse * kdLast * Albedo;
 				float3 iblSpecularResult = iblSpecular * (Flast * envBDRF.r + envBDRF.g);
-				float3 IndirectResult = iblDiffuseResult + iblSpecularResult;
+				float3 IndirectResult = iblDiffuseResult +iblSpecularResult;
 
 				float4 result = float4(DirectLightResult + IndirectResult, 1);
-				result.xyz = ambient_contrib.xyz;
+				//result.xyz = ambient_contrib.xyz;
 				return result;
 			}
 

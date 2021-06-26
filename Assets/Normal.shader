@@ -3,6 +3,7 @@
        Properties
        {
               _myColor ("MainColor", color) = (1,1,1,1)
+			  _MainTex("Texture", 2D) = "white" {}
        }
        SubShader
        {
@@ -10,16 +11,18 @@
               LOD 100
               Pass
               {
+				   Tags {
+						"LightMode" = "ForwardBase"
+					}
                      CGPROGRAM
                      #pragma vertex vert
                      #pragma fragment frag
-                     #pragma multi_compile LIGHTMAP_ON
-                     #pragma multi_compile SHADOWS_DEPTH SHADOWS_SCREEN
-                     #pragma multi_compile SHADOWS_SHADOWMASK
                      
-                     #include "UnityCG.cginc"
-                     #include "AutoLight.cginc"
-                     #include "UnityStandardCore.cginc"
+					 #pragma target 3.0
+					#pragma vertex vert
+					#pragma fragment frag
+					#include "UnityStandardBRDF.cginc" 
+
                      struct appdata
                      {
                            float4 vertex : POSITION;
@@ -35,6 +38,8 @@
                            float3 worldNormal : TEXCOORD3;
                      };
                      fixed4 _myColor;
+					 sampler2D _MainTex;
+					 float4 _MainTex_ST;
                      
                      v2f vert (appdata v)
                      {
@@ -49,16 +54,17 @@
                      
                      fixed4 frag (v2f i) : SV_Target
                      {
+						  i.worldNormal = normalize(i.worldNormal);
 						   half3 ambient_contrib = ShadeSH9(float4(i.worldNormal, 1));
 
                            half directAtten = 1;
                            half3 lightDir = normalize(_WorldSpaceLightPos0.xyz);
-						   i.worldNormal = normalize(i.worldNormal);
+						   
                            half3 directColor = dot(lightDir, i.worldNormal) * _LightColor0;
-                           half3 indirectColor = ambient_contrib;
-                           fixed bakedAtten = UnitySampleBakedOcclusion(i.uv.zw, i.worldPos);
-                           half3 diffuse = (indirectColor.xyz + (directColor)  * bakedAtten * directAtten);
-                           return fixed4(diffuse , 1);
+                           half3 IndirectColor = ambient_contrib;
+						   float3 DirectLightResult = (directColor)* directAtten;
+                           half3 diffuse = (IndirectColor.xyz + DirectLightResult);
+                           return fixed4(diffuse, 1);
                      }
                      ENDCG
               }
